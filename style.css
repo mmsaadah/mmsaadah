@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url("background.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    width: calc(100vw - 64px);
+    max-width: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header, nav, section, article, aside, footer{
+    background: white;
+    padding: 2vh;
+    margin: 2vh auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    margin-top: 2vh;
+}
