@@ -1,4 +1,6 @@
-document.body.innerHTML = `<header>
+document.body.innerHTML = `
+<img class="headshot"></img>
+<header>
 <h1>Hello World!</h1>
 <p>My name is Maddie, and I'm pretty cool</p>
 <p>Please hire me</p>
@@ -8,4 +10,5 @@ document.body.innerHTML = `<header>
 <a href="#">First Link</a>
 <a href="#">Another Link</a>
 <a href="#">Final Link</a>
-</nav>` + document.body.innerHTML;
+</nav>
+` + document.body.innerHTML;
