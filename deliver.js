@@ -1,5 +1,5 @@
 document.body.innerHTML = `
-<img class="headshot"></img>
+<img class="headshot" src="photos/headshot.jpg"></img>
 <header>
 <h1>Hello World!</h1>
 <p>My name is Maddie, and I'm pretty cool</p>

@@ -1,3 +1,7 @@
+:root {
+    --corner: 24px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,15 +27,37 @@ body {
     overflow-x: hidden;
 }
 
-.headshot {
-    display: block;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+header {
+    /* height: 300px; */
+    display: flex;
     margin: 10vh auto;
 }
 
-header, nav, section, article, aside, footer{
+header>* {
+    display: inline-block;
+    height: 300px;
+    color: white;
+}
+
+header .headshot {
+    float: left;
+    width: 300px;
+    height: 300px;
+    border-radius: var(--corner);
+}
+
+header div {
+    width: 100%;
+    /* background: red; */
+    padding: var(--corner);
+    margin: var(--corner);
+    height: calc(auto - 2 * var(--corner));
+    border: 2px solid white;
+    border-radius: var(--corner) var(--corner) var(--corner) 0px;
+}
+
+nav, section, article, aside, footer{
+    border-radius: var(--corner);
     background: white;
     padding: 2vh;
     margin: 2vh auto;
