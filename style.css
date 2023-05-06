@@ -126,7 +126,7 @@ nav>a {
     line-height: calc(3 * var(--corner));
 }
 
-nav>a:hover {
+nav>a:hover, nav>a.active {
     color: var(--bg);
     background: var(--accent);
     border-color: var(--accent);
