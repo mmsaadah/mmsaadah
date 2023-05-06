@@ -136,3 +136,10 @@ p {
     margin-top: 2vh;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: calc(0.5 * var(--corner)) auto;
+}
