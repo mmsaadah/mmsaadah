@@ -4,7 +4,8 @@
 }
 
 html {
-    background-image: url("background.webp");
+    background-color: #687;
+    /* background-image: url("photos/background.webp"); */
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
