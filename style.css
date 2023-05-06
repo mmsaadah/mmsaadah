@@ -1,6 +1,7 @@
 :root {
     --corner: 24px;
     --accent: #eab;
+    --bg: #687;
     --anim-list: color .3s, border-color .3s;
 }
 
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 html {
-    background-color: #687;
+    background-color: var(--bg);
     /* background-image: url("photos/pinkgranite.jpeg"); */
     background-repeat: no-repeat;
     background-position: center;
@@ -115,10 +116,13 @@ nav>a {
     text-align: center;
     height: calc(3 * var(--corner));
     line-height: calc(3 * var(--corner));
+    border-color: var(--accent);
 }
 
 nav>a:hover {
-    color: white;
+    color: var(--bg);
+    background: var(--accent);
+    border-color: var(--accent);
 }
 
 p {
