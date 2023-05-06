@@ -2,7 +2,7 @@
     --corner: 24px;
     --accent: #eab;
     --bg: #687;
-    --anim-list: color .3s, border-color .3s;
+    --anim-list: color .3s, border-color .3s, background-color .3s;
 }
 
 .bubble {
@@ -21,6 +21,10 @@
     text-decoration: none;
     transition: var(--anim-list);
     /* border: 2px solid red; */
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6, a {
@@ -87,9 +91,12 @@ article {
 article>* {
     width: 50%;
     background: white;
-    height: 300px;
     margin: var(--corner);
     padding: var(--corner);
+}
+
+article>*>a {
+    display: block;
 }
 
 section, aside, footer {
@@ -116,13 +123,13 @@ nav>a {
     text-align: center;
     height: calc(3 * var(--corner));
     line-height: calc(3 * var(--corner));
-    border-color: var(--accent);
 }
 
 nav>a:hover {
     color: var(--bg);
     background: var(--accent);
     border-color: var(--accent);
+    text-decoration: none;
 }
 
 p {
