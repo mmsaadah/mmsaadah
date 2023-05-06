@@ -86,10 +86,11 @@ header .bubble {
 
 article {
     display: flex;
+    flex-wrap: wrap;
 }
 
 article>* {
-    width: 50%;
+    width: calc(50% - 4 * var(--corner));
     background: white;
     margin: var(--corner);
     padding: var(--corner);
