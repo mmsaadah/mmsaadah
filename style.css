@@ -7,7 +7,11 @@
 .bubble {
     border: 2px solid;
     border-radius: var(--corner) var(--corner) var(--corner) 0px;
+}
 
+.bubble.right, article>* {
+    border-color: transparent;
+    border-radius: var(--corner) var(--corner) 0px var(--corner);
 }
 
 * {
@@ -21,6 +25,10 @@
 h1, h2, h3, h4, h5, h6, a {
     color: var(--accent);
     font-weight: 600;
+}
+
+.center {
+    text-align: center;
 }
 
 html {
@@ -40,11 +48,10 @@ body {
     max-width: 100vh;
     min-height: 100vh;
     overflow-x: hidden;
-    margin: 10vh auto;
 }
 
-header, body>* {
-    margin: 5vh auto;
+body, body>* {
+    margin: 8vh auto;
 }
 
 header {
@@ -63,7 +70,7 @@ header .headshot {
     border-radius: var(--corner);
     height: 300px;
     width: 300px;
-    margin: var(--corner);
+    margin: 0 var(--corner);
 }
 
 header .bubble {
@@ -74,11 +81,29 @@ header .bubble {
     border-color: var(--accent);
 }
 
-section, article, aside, footer{
+article {
+    display: flex;
+}
+
+article>* {
+    width: 50%;
+    background: white;
+    height: 300px;
+    margin: var(--corner);
+    padding: var(--corner);
+}
+
+section, aside, footer {
     border-radius: var(--corner);
     background: white;
     padding: 2vh;
     margin: 2vh auto;
+}
+
+iframe#page {
+    border: none;
+    width: 100%;
+    height: 100vh;
 }
 
 nav {
@@ -101,3 +126,4 @@ nav>a:hover {
 p {
     margin-top: 2vh;
 }
+
