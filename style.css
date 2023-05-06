@@ -6,12 +6,12 @@
 
 .bubble {
     border: 2px solid;
-    border-radius: var(--corner) var(--corner) var(--corner) 0px;
+    border-radius: var(--corner) var(--corner) 0px var(--corner);
 }
 
-.bubble.right, article>* {
+.bubble.right, article>*, header>.bubble {
     border-color: transparent;
-    border-radius: var(--corner) var(--corner) 0px var(--corner);
+    border-radius: var(--corner) var(--corner) var(--corner) 0px;
 }
 
 * {
@@ -61,9 +61,7 @@ header {
 }
 
 header>* {
-    display: inline-block;
-    color: white;
-}
+    display: inline-block;}
 
 header .headshot {
     float: left;
@@ -74,11 +72,11 @@ header .headshot {
 }
 
 header .bubble {
+    background: white;
     padding: var(--corner);
     width: calc(300px - 2 * var(--corner));
     margin: var(--corner);
-    height: calc(300px - var(--corner) * 4);
-    border-color: var(--accent);
+    border-color: transparent;
 }
 
 article {
